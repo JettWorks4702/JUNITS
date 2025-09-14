@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.raghav.junits.TestTrial" time="0.034" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.raghav.junits.TestTrial" time="0.268" tests="7" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="D:\Eclipse\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.4.v20240802-1551\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\Raghav Garg\AppData\Local\Temp\surefire17260682028928348366\surefirebooter-20250914174240866_3.jar C:\Users\Raghav Garg\AppData\Local\Temp\surefire17260682028928348366 2025-09-14T17-42-40_504-jvmRun1 surefire-20250914174240866_1tmp surefire_0-20250914174240866_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\Raghav Garg\AppData\Local\Temp\surefire2233209501114424250\surefirebooter-20250914200613373_3.jar C:\Users\Raghav Garg\AppData\Local\Temp\surefire2233209501114424250 2025-09-14T20-06-12_690-jvmRun1 surefire-20250914200613373_1tmp surefire_0-20250914200613373_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\Raghav Garg\eclipse-workspace\myServlet\Junit-06\target\test-classes;C:\Users\Raghav Garg\eclipse-workspace\myServlet\Junit-06\target\classes;C:\Users\Raghav Garg\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Raghav Garg\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Raghav Garg\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.13.1\junit-jupiter-api-5.13.1.jar;C:\Users\Raghav Garg\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Raghav Garg\.m2\repository\org\junit\platform\junit-platform-commons\1.13.1\junit-platform-commons-1.13.1.jar;C:\Users\Raghav Garg\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Raghav Garg\AppData\Local\Temp\surefire17260682028928348366\surefirebooter-20250914174240866_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Raghav Garg\AppData\Local\Temp\surefire2233209501114424250\surefirebooter-20250914200613373_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.4+7-LTS"/>
@@ -60,6 +60,54 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testComputeSquareArea" classname="com.raghav.junits.TestTrial" time="0.015"/>
-  <testcase name="test" classname="com.raghav.junits.TestTrial" time="0.001"/>
+  <testcase name="testPerformance" classname="com.raghav.junits.TestTrial" time="0.1">
+    <failure message="execution exceeded timeout of 1 ms by 1 ms" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: execution exceeded timeout of 1 ms by 1 ms
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTimeout.assertTimeout(AssertTimeout.java:81)
+	at org.junit.jupiter.api.AssertTimeout.assertTimeout(AssertTimeout.java:53)
+	at org.junit.jupiter.api.Assertions.assertTimeout(Assertions.java:3391)
+	at com.raghav.junits.TestTrial.testPerformance(TestTrial.java:101)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
+    <system-out><![CDATA[Constructor called
+Before ALll
+Before test
+Test case completed
+]]></system-out>
+  </testcase>
+  <testcase name="testFalse" classname="com.raghav.junits.TestTrial" time="0.007">
+    <system-out><![CDATA[Before test
+No one is good
+Test case completed
+]]></system-out>
+  </testcase>
+  <testcase name="testComputeSquareArea" classname="com.raghav.junits.TestTrial" time="0.008">
+    <system-out><![CDATA[Before test
+Test case completed
+]]></system-out>
+  </testcase>
+  <testcase name="testComputeCircleArea" classname="com.raghav.junits.TestTrial" time="0.009">
+    <system-out><![CDATA[Before test
+Test case completed
+]]></system-out>
+  </testcase>
+  <testcase name="test" classname="com.raghav.junits.TestTrial" time="0.003">
+    <system-out><![CDATA[Before test
+Test case completed
+]]></system-out>
+  </testcase>
+  <testcase name="testArrays" classname="com.raghav.junits.TestTrial" time="0.013">
+    <system-out><![CDATA[Before test
+Test case completed
+]]></system-out>
+  </testcase>
+  <testcase name="testSorting_Excpetion" classname="com.raghav.junits.TestTrial" time="0.011">
+    <system-out><![CDATA[Before test
+java.lang.NullPointerException: Cannot read the array length because "a" is null
+Test case completed
+]]></system-out>
+  </testcase>
 </testsuite>

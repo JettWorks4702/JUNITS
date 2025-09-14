@@ -1,4 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: com.raghav.junits.TestTrial
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 s -- in com.raghav.junits.TestTrial
+Tests run: 7, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.268 s <<< FAILURE! - in com.raghav.junits.TestTrial
+com.raghav.junits.TestTrial.testPerformance  Time elapsed: 0.1 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: execution exceeded timeout of 1 ms by 1 ms
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTimeout.assertTimeout(AssertTimeout.java:81)
+	at org.junit.jupiter.api.AssertTimeout.assertTimeout(AssertTimeout.java:53)
+	at org.junit.jupiter.api.Assertions.assertTimeout(Assertions.java:3391)
+	at com.raghav.junits.TestTrial.testPerformance(TestTrial.java:101)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
